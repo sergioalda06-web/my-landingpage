@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth motion-reduce:scroll-auto">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#071b22" />
+    <meta
+      name="description"
+      content="Portfolio de Sergio Alda: desarrollo web, ilustración digital, animación 3D y videojuegos."
+    />
+    <title>Sergio Alda | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              bg: "#071b22",
+              panel: "#0d252d",
+              "panel-raised": "#102f37",
+              line: "#24505a",
+              green: "#73f5a2",
+              cyan: "#70d9e8",
+              text: "#e1f4e9",
+              muted: "#9bb9b1",
+            },
+            fontFamily: {
+              mono: ["IBM Plex Mono", "Cascadia Mono", "Consolas", "monospace"],
+              pixel: ["VT323", "Courier New", "monospace"],
+            },
+            keyframes: {
+              blink: { to: { visibility: "hidden" } },
+            },
+            animation: {
+              blink: "blink 1s steps(2, start) infinite",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="scheme-dark min-w-[320px] bg-bg bg-[radial-gradient(ellipse_at_75%_0%,rgb(31_108_112_/_18%),transparent_35rem)] font-mono leading-[1.7] text-text after:pointer-events-none after:fixed after:inset-0 after:z-[5] after:bg-[repeating-linear-gradient(0deg,transparent_0_3px,rgb(0_0_0_/_9%)_4px)] after:content-['']">
+    <header class="sticky top-0 z-10 border-b border-line bg-[rgb(7_27_34_/_92%)] backdrop-blur-[12px]">
+      <nav class="mx-auto flex min-h-[68px] w-[min(1080px,calc(100%_-_40px))] items-center justify-between gap-6 max-[760px]:flex-col max-[760px]:items-start max-[760px]:justify-center max-[760px]:gap-1 max-[760px]:py-[10px] max-[480px]:w-[min(calc(100%_-_28px),1080px)]" aria-label="Navegación principal">
+        <a class="font-pixel text-[1.8rem] tracking-[0.04em] text-green no-underline focus-visible:outline-2 focus-visible:outline-cyan focus-visible:outline-offset-4" href="#inicio">SA<span aria-hidden="true">_</span></a>
+        <div class="flex flex-wrap gap-[22px] max-[760px]:gap-x-4 max-[760px]:gap-y-2">
+          <a class="text-[0.78rem] text-muted no-underline hover:text-green focus-visible:outline-2 focus-visible:outline-cyan focus-visible:outline-offset-4 max-[480px]:text-[0.7rem]" href="#sobre-mi">Sobre mí</a>
+          <a class="text-[0.78rem] text-muted no-underline hover:text-green focus-visible:outline-2 focus-visible:outline-cyan focus-visible:outline-offset-4 max-[480px]:text-[0.7rem]" href="#habilidades">Habilidades</a>
+          <a class="text-[0.78rem] text-muted no-underline hover:text-green focus-visible:outline-2 focus-visible:outline-cyan focus-visible:outline-offset-4 max-[480px]:text-[0.7rem]" href="#proyectos">Proyecto</a>
+          <a class="text-[0.78rem] text-muted no-underline hover:text-green focus-visible:outline-2 focus-visible:outline-cyan focus-visible:outline-offset-4 max-[480px]:text-[0.7rem]" href="#hobbies">Hobbies</a>
+          <a class="text-[0.78rem] text-muted no-underline hover:text-green focus-visible:outline-2 focus-visible:outline-cyan focus-visible:outline-offset-4 max-[480px]:text-[0.7rem]" href="#contacto">Contacto</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="mx-auto w-[min(1080px,calc(100%_-_40px))] pb-[52px] max-[480px]:w-[min(calc(100%_-_28px),1080px)]">
+      <section class="scroll-mt-[92px] grid min-h-[590px] grid-cols-[1.15fr_0.85fr] items-center gap-12 pt-12 pb-[70px] max-[760px]:min-h-0 max-[760px]:grid-cols-1 max-[760px]:gap-[38px] max-[760px]:pt-[65px] max-[480px]:pt-12" id="inicio">
+        <div>
+          <p class="mb-3 text-[0.75rem] font-semibold uppercase tracking-[0.12em] text-green">Portfolio personal · Sistema en línea</p>
+          <h1 class="mb-2 font-pixel text-[clamp(4.2rem,10vw,7.3rem)] font-normal leading-[0.9] tracking-[0.015em]">Sergio<br />Alda</h1>
+          <h2 class="mb-5 text-[clamp(1rem,2vw,1.25rem)] font-medium text-cyan">Desarrollador de aplicaciones web</h2>
+          <p class="mb-4 max-w-[590px] text-muted">
+            Me gusta crear experiencias digitales, aprender nuevas herramientas
+            y dar vida a ideas, tanto en la web como en proyectos creativos.
+          </p>
+          <div class="mt-7 flex flex-wrap gap-3">
+            <a class="inline-flex min-h-[46px] items-center justify-center border border-green bg-green px-4 py-[9px] text-[0.8rem] font-bold text-bg no-underline transition duration-[180ms] ease-in-out hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgb(115_245_162_/_18%)] focus-visible:outline-2 focus-visible:outline-cyan focus-visible:outline-offset-4 motion-reduce:transition-none" href="#proyectos">Ver mi proyecto</a>
+            <a class="inline-flex min-h-[46px] items-center justify-center border border-green bg-transparent px-4 py-[9px] text-[0.8rem] font-bold text-green no-underline transition duration-[180ms] ease-in-out hover:-translate-y-0.5 hover:bg-green hover:text-bg hover:shadow-[0_8px_24px_rgb(115_245_162_/_18%)] focus-visible:outline-2 focus-visible:outline-cyan focus-visible:outline-offset-4 motion-reduce:transition-none" href="#contacto">Contactar</a>
+          </div>
+        </div>
+
+        <div
+          class="w-full overflow-hidden rounded-[13px] border border-[#39727a] bg-[#08191e] shadow-[0_0_0_7px_#0b2027,0_24px_70px_rgb(0_0_0_/_38%),0_0_45px_rgb(112_217_232_/_10%)] [transform:perspective(900px)_rotateY(-3deg)] max-[760px]:mx-auto max-[760px]:max-w-[540px] max-[760px]:[transform:none]"
+          aria-label="Ventana decorativa con una terminal retro"
+        >
+          <div class="flex min-h-10 items-center justify-between border-b border-line px-[14px] text-[0.68rem] text-muted">
+            <span class="flex gap-[6px]" aria-hidden="true"><i class="h-2 w-2 rounded-full bg-green"></i><i class="h-2 w-2 rounded-full bg-cyan"></i><i class="h-2 w-2 rounded-full bg-[#d5ad72]"></i></span>
+            <span>SERGIO_OS — terminal</span>
+            <span>v1.0</span>
+          </div>
+          <div class="min-h-[245px] p-6 text-[0.82rem] text-green [text-shadow:0_0_12px_rgb(115_245_162_/_38%)] max-[480px]:min-h-[220px] max-[480px]:p-[18px] max-[480px]:text-[0.72rem]" aria-hidden="true">
+            <p class="mb-2 text-muted">C:\PORTFOLIO\SERGIO&gt; iniciar.exe</p>
+            <p class="mb-2 text-cyan">Cargando perfil creativo...</p>
+            <p class="mb-2">[ OK ] Desarrollo web</p>
+            <p class="mb-2">[ OK ] Ilustración &amp; animación 3D</p>
+            <p class="mb-2">[ OK ] Desarrollo de videojuegos</p>
+            <p class="mb-2 text-muted">
+              Listo. Explora el portfolio<span class="ml-1 inline-block h-4 w-[9px] align-[-3px] animate-blink bg-green motion-reduce:animate-none"></span>
+            </p>
+          </div>
+          <div class="flex justify-between border-t border-line px-[15px] py-[11px] text-[0.65rem] text-muted">
+            <span>MEMORIA CREATIVA: 100%</span><span>● ONLINE</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="scroll-mt-[92px] pt-[54px]" id="sobre-mi">
+        <div class="mb-[22px] flex items-end justify-between gap-5 max-[760px]:flex-col max-[760px]:items-start">
+          <div>
+            <p class="mb-3 text-[0.75rem] font-semibold uppercase tracking-[0.12em] text-green">01 / Perfil</p>
+            <h2 class="m-0 font-pixel text-[2.6rem] font-normal leading-none">Sobre mí</h2>
+          </div>
+          <p class="m-0 max-w-[430px] text-[0.78rem] text-muted">Un poco de código, mucha curiosidad y ganas de seguir creando.</p>
+        </div>
+        <div class="border border-line bg-[linear-gradient(145deg,rgb(16_47_55_/_90%),rgb(9_30_37_/_95%))] p-6 text-muted">
+          <p class="mb-4">
+            Soy <strong class="text-text">Sergio Alda</strong>, desarrollador de aplicaciones web.
+            Tengo conocimientos de HTML, CSS, JavaScript, Java y bases de datos.
+            También disfruto explorando disciplinas creativas como la
+            ilustración, la animación 3D y el desarrollo de videojuegos.
+          </p>
+        </div>
+      </section>
+
+      <section class="scroll-mt-[92px] pt-[54px]" id="habilidades">
+        <div class="mb-[22px] flex items-end justify-between gap-5 max-[760px]:flex-col max-[760px]:items-start">
+          <div>
+            <p class="mb-3 text-[0.75rem] font-semibold uppercase tracking-[0.12em] text-green">02 / Herramientas</p>
+            <h2 class="m-0 font-pixel text-[2.6rem] font-normal leading-none">Habilidades</h2>
+          </div>
+          <p class="m-0 max-w-[430px] text-[0.78rem] text-muted">Tecnologías y áreas que forman parte de mi camino.</p>
+        </div>
+        <div class="grid grid-cols-3 gap-[14px] max-[760px]:grid-cols-2 max-[480px]:grid-cols-1">
+          <article class="min-h-[155px] border border-line bg-[linear-gradient(145deg,rgb(16_47_55_/_90%),rgb(9_30_37_/_95%))] p-5">
+            <span class="text-[0.7rem] text-cyan">SKILL_01</span>
+            <h3 class="mt-3 mb-2 text-[0.96rem] text-green">HTML &amp; CSS</h3>
+            <p class="m-0 text-[0.78rem] text-muted">Estructura y estilos para construir páginas web.</p>
+          </article>
+          <article class="min-h-[155px] border border-line bg-[linear-gradient(145deg,rgb(16_47_55_/_90%),rgb(9_30_37_/_95%))] p-5">
+            <span class="text-[0.7rem] text-cyan">SKILL_02</span>
+            <h3 class="mt-3 mb-2 text-[0.96rem] text-green">JavaScript</h3>
+            <p class="m-0 text-[0.78rem] text-muted">Interactividad y comportamiento en la web.</p>
+          </article>
+          <article class="min-h-[155px] border border-line bg-[linear-gradient(145deg,rgb(16_47_55_/_90%),rgb(9_30_37_/_95%))] p-5">
+            <span class="text-[0.7rem] text-cyan">SKILL_03</span>
+            <h3 class="mt-3 mb-2 text-[0.96rem] text-green">Java</h3>
+            <p class="m-0 text-[0.78rem] text-muted">Programación y desarrollo de aplicaciones.</p>
+          </article>
+          <article class="min-h-[155px] border border-line bg-[linear-gradient(145deg,rgb(16_47_55_/_90%),rgb(9_30_37_/_95%))] p-5">
+            <span class="text-[0.7rem] text-cyan">SKILL_04</span>
+            <h3 class="mt-3 mb-2 text-[0.96rem] text-green">Bases de datos</h3>
+            <p class="m-0 text-[0.78rem] text-muted">Conocimientos de almacenamiento y gestión de datos.</p>
+          </article>
+          <article class="min-h-[155px] border border-line bg-[linear-gradient(145deg,rgb(16_47_55_/_90%),rgb(9_30_37_/_95%))] p-5">
+            <span class="text-[0.7rem] text-cyan">SKILL_05</span>
+            <h3 class="mt-3 mb-2 text-[0.96rem] text-green">Desarrollo web</h3>
+            <p class="m-0 text-[0.78rem] text-muted">Interés en crear experiencias digitales completas.</p>
+          </article>
+          <article class="min-h-[155px] border border-line bg-[linear-gradient(145deg,rgb(16_47_55_/_90%),rgb(9_30_37_/_95%))] p-5">
+            <span class="text-[0.7rem] text-cyan">SKILL_06</span>
+            <h3 class="mt-3 mb-2 text-[0.96rem] text-green">Aprendizaje continuo</h3>
+            <p class="m-0 text-[0.78rem] text-muted">Siempre explorando nuevas ideas y herramientas.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="scroll-mt-[92px] pt-[54px]" id="proyectos">
+        <div class="mb-[22px] flex items-end justify-between gap-5 max-[760px]:flex-col max-[760px]:items-start">
+          <div>
+            <p class="mb-3 text-[0.75rem] font-semibold uppercase tracking-[0.12em] text-green">03 / En desarrollo</p>
+            <h2 class="m-0 font-pixel text-[2.6rem] font-normal leading-none">Proyecto destacado</h2>
+          </div>
+          <p class="m-0 max-w-[430px] text-[0.78rem] text-muted">Descubre el juego y su propuesta en Game Jolt.</p>
+        </div>
+        <article class="grid grid-cols-[minmax(220px,0.78fr)_minmax(0,1.22fr)] items-center gap-[30px] border border-line bg-[linear-gradient(145deg,rgb(16_47_55_/_90%),rgb(9_30_37_/_95%))] p-[22px] max-[760px]:grid-cols-1">
+          <a class="group relative block w-full overflow-hidden border border-[#53767b] bg-[#050b12] shadow-[0_0_0_5px_#0a2027,0_12px_30px_rgb(0_0_0_/_35%)] max-[760px]:mx-auto max-[760px]:max-w-[400px] focus-visible:outline-2 focus-visible:outline-cyan focus-visible:outline-offset-4" href="https://gamejolt.com/games/frickbears3/930477" target="_blank" rel="noopener noreferrer" aria-label="Ver Five Nights at Frickbear's 3 en Game Jolt">
+            <img class="block aspect-[3/4] w-full object-cover transition duration-[350ms] ease-in-out group-hover:scale-[1.035] motion-reduce:transition-none" src="https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/carmouleartworkfinal2_8qm9ejrk.png" alt="Ilustración promocional de Five Nights at Frickbear's 3 con sus personajes animatrónicos" loading="lazy">
+            <span class="pointer-events-none absolute inset-0 border border-cyan/20 bg-[linear-gradient(180deg,rgb(3_14_20_/_58%),transparent_22%,transparent_72%,rgb(3_14_20_/_48%))]"></span>
+            <span class="absolute top-3 left-3 z-[1] border border-cyan/70 bg-[rgb(5_17_24_/_82%)] px-2 py-[5px] text-[0.62rem] tracking-[0.08em] text-cyan">FANGAME / GAME JOLT</span>
+          </a>
+          <div class="self-center">
+            <span class="text-[0.75rem] font-semibold uppercase tracking-[0.12em] text-green">Videojuego</span>
+            <h3 class="my-[5px] mb-[9px] font-pixel text-[2.2rem] font-normal">Five Nights at Frickbear's 3</h3>
+            <p class="mb-0 max-w-[670px] text-[0.82rem] text-muted">
+              Bienvenidos a este fangame de FNaF, donde tus decisiones y la
+              rejugabilidad lo cambian todo. Enfréntate a más de 40 animatrónicos,
+              explora minijuegos 3D y descubre cuatro finales, todo con un estilo
+              artístico peculiar y divertido. ¿Sobrevivirás a Five Nights at
+              Frickbear's... ¿3?
+            </p>
+          </div>
+          <a class="mt-5 block w-fit border border-dashed border-cyan p-3 text-center text-[0.68rem] text-cyan no-underline hover:border-green hover:text-green focus-visible:outline-2 focus-visible:outline-cyan focus-visible:outline-offset-4" href="https://gamejolt.com/games/frickbears3/930477" target="_blank" rel="noopener noreferrer">VER EN<br />GAME JOLT ↗</a>
+        </article>
+      </section>
+
+      <section class="scroll-mt-[92px] pt-[54px]" id="hobbies">
+        <div class="mb-[22px] flex items-end justify-between gap-5 max-[760px]:flex-col max-[760px]:items-start">
+          <div>
+            <p class="mb-3 text-[0.75rem] font-semibold uppercase tracking-[0.12em] text-green">04 / Fuera del código</p>
+            <h2 class="m-0 font-pixel text-[2.6rem] font-normal leading-none">Hobbies creativos</h2>
+          </div>
+          <p class="m-0 max-w-[430px] text-[0.78rem] text-muted">Otras formas de imaginar, diseñar y contar historias.</p>
+        </div>
+        <div class="grid grid-cols-3 gap-[14px] max-[760px]:grid-cols-2 max-[480px]:grid-cols-1">
+          <article class="min-h-[155px] border border-line bg-[linear-gradient(145deg,rgb(16_47_55_/_90%),rgb(9_30_37_/_95%))] p-5">
+            <span class="text-[0.7rem] text-cyan">CREATIVE_01</span>
+            <h3 class="mt-3 mb-2 text-[0.96rem] text-green">Ilustración digital</h3>
+            <p class="m-0 text-[0.78rem] text-muted">Ilustración de cómics y creación de personajes.</p>
+          </article>
+          <article class="min-h-[155px] border border-line bg-[linear-gradient(145deg,rgb(16_47_55_/_90%),rgb(9_30_37_/_95%))] p-5">
+            <span class="text-[0.7rem] text-cyan">CREATIVE_02</span>
+            <h3 class="mt-3 mb-2 text-[0.96rem] text-green">Animación 3D</h3>
+            <p class="m-0 text-[0.78rem] text-muted">Creación y experimentación con Blender y Source Filmmaker.</p>
+          </article>
+          <article class="min-h-[155px] border border-line bg-[linear-gradient(145deg,rgb(16_47_55_/_90%),rgb(9_30_37_/_95%))] p-5">
+            <span class="text-[0.7rem] text-cyan">CREATIVE_03</span>
+            <h3 class="mt-3 mb-2 text-[0.96rem] text-green">Videojuegos</h3>
+            <p class="m-0 text-[0.78rem] text-muted">Diseño y desarrollo de ideas interactivas.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="scroll-mt-[92px] pt-[54px]" id="paleta">
+        <div class="mb-[22px] flex items-end justify-between gap-5 max-[760px]:flex-col max-[760px]:items-start">
+          <div>
+            <p class="mb-3 text-[0.75rem] font-semibold uppercase tracking-[0.12em] text-green">05 / Identidad visual</p>
+            <h2 class="m-0 font-pixel text-[2.6rem] font-normal leading-none">Paleta recomendada</h2>
+          </div>
+          <p class="m-0 max-w-[430px] text-[0.78rem] text-muted">
+            Verdes y azules sobre fondos oscuros: aire retro con contraste para
+            leer cómodamente.
+          </p>
+        </div>
+        <div class="grid grid-cols-5 gap-[10px] max-[480px]:grid-cols-2" aria-label="Colores de la paleta recomendada">
+          <div class="overflow-hidden border border-line bg-panel">
+            <div class="h-14 bg-[#071b22]"></div>
+            <div class="px-[10px] py-[9px] text-[0.67rem] text-muted">
+              <strong class="block font-medium text-text">Fondo profundo</strong>#071B22
+            </div>
+          </div>
+          <div class="overflow-hidden border border-line bg-panel">
+            <div class="h-14 bg-[#0d252d]"></div>
+            <div class="px-[10px] py-[9px] text-[0.67rem] text-muted"><strong class="block font-medium text-text">Panel</strong>#0D252D</div>
+          </div>
+          <div class="overflow-hidden border border-line bg-panel">
+            <div class="h-14 bg-[#73f5a2]"></div>
+            <div class="px-[10px] py-[9px] text-[0.67rem] text-muted">
+              <strong class="block font-medium text-text">Verde fósforo</strong>#73F5A2
+            </div>
+          </div>
+          <div class="overflow-hidden border border-line bg-panel">
+            <div class="h-14 bg-[#70d9e8]"></div>
+            <div class="px-[10px] py-[9px] text-[0.67rem] text-muted"><strong class="block font-medium text-text">Azul cian</strong>#70D9E8</div>
+          </div>
+          <div class="overflow-hidden border border-line bg-panel">
+            <div class="h-14 bg-[#e1f4e9]"></div>
+            <div class="px-[10px] py-[9px] text-[0.67rem] text-muted"><strong class="block font-medium text-text">Texto claro</strong>#E1F4E9</div>
+          </div>
+        </div>
+        <p class="mt-[14px] mb-0 text-[0.75rem] text-muted">
+          Fuentes: IBM Plex Mono para textos legibles y VT323 para títulos con
+          toque de terminal retro.
+        </p>
+      </section>
+
+      <section class="scroll-mt-[92px] pt-[54px]" id="contacto">
+        <div class="mb-[22px] flex items-end justify-between gap-5 max-[760px]:flex-col max-[760px]:items-start">
+          <div>
+            <p class="mb-3 text-[0.75rem] font-semibold uppercase tracking-[0.12em] text-green">06 / Conexión</p>
+            <h2 class="m-0 font-pixel text-[2.6rem] font-normal leading-none">Contacto</h2>
+          </div>
+          <p class="m-0 max-w-[430px] text-[0.78rem] text-muted">
+            ¿Tienes una idea o quieres hablar de algún proyecto? ¡Escríbeme!
+          </p>
+        </div>
+        <div class="flex items-center justify-between gap-[22px] border border-line bg-[linear-gradient(145deg,rgb(16_47_55_/_90%),rgb(9_30_37_/_95%))] p-[22px] max-[760px]:flex-col max-[760px]:items-start">
+          <div>
+            <strong>Abierto a conectar</strong>
+            <p class="mt-1 mb-0 text-[0.78rem] text-muted">Encuéntrame en estos canales:</p>
+          </div>
+          <div class="flex flex-wrap gap-[10px]">
+            <a
+              class="border border-line px-3 py-[9px] text-[0.75rem] text-cyan no-underline hover:border-green hover:text-green focus-visible:outline-2 focus-visible:outline-cyan focus-visible:outline-offset-4"
+              href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=sergioaldamunoz@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Gmail ↗</a
+            >
+            <a
+              class="border border-line px-3 py-[9px] text-[0.75rem] text-cyan no-underline hover:border-green hover:text-green focus-visible:outline-2 focus-visible:outline-cyan focus-visible:outline-offset-4"
+              href="https://github.com/sergioalda06-web"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub ↗</a
+            >
+            <a
+              class="border border-line px-3 py-[9px] text-[0.75rem] text-cyan no-underline hover:border-green hover:text-green focus-visible:outline-2 focus-visible:outline-cyan focus-visible:outline-offset-4"
+              href="https://gamejolt.com/@SpookyRick"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Game Jolt ↗</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-line pt-6 pb-[34px] text-[0.7rem] text-muted">
+      <div class="mx-auto flex w-[min(1080px,calc(100%_-_40px))] justify-between gap-4 max-[480px]:w-[min(calc(100%_-_28px),1080px)] max-[480px]:flex-col">
+        <span
+          >© <span id="year">2026</span> Sergio Alda · Hecho con curiosidad y
+          código.</span
+        ><a class="focus-visible:outline-2 focus-visible:outline-cyan focus-visible:outline-offset-4" href="#inicio">Volver arriba ↑</a>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
