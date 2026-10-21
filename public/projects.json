@@ -1,0 +1,26 @@
+[
+  {
+    "id": "frickbears-3",
+    "title": "Five Nights at Frickbear's 3",
+    "description": "Welcome to this FNaF fangame, where your choices and replayability change everything. Face more than 40 animatronics, explore 3D minigames and discover four endings, all with a quirky, fun art style. Will you survive Five Nights at Frickbear's... 3?",
+    "descriptionEs": "Bienvenidos a este fangame de FNaF, donde tus decisiones y la rejugabilidad lo cambian todo. Enfréntate a más de 40 animatrónicos, explora minijuegos 3D y descubre cuatro finales, todo con un estilo artístico peculiar y divertido. ¿Sobrevivirás a Five Nights at Frickbear's... 3?",
+    "category": "game",
+    "tags": ["fangame", "3d"],
+    "image": "https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/carmouleartworkfinal2_8qm9ejrk.png",
+    "imageAlt": "Promotional artwork for Five Nights at Frickbear's 3",
+    "imageAltEs": "Ilustración promocional de Five Nights at Frickbear's 3",
+    "url": "https://gamejolt.com/games/frickbears3/930477"
+  },
+  {
+    "id": "portfolio-interactivo",
+    "title": "Interactive portfolio",
+    "titleEs": "Portfolio interactivo",
+    "description": "This retro-styled portfolio, built with React, TypeScript and Zustand.",
+    "descriptionEs": "Este portfolio de estética retro, construido con React, TypeScript y Zustand.",
+    "category": "web",
+    "tags": ["typescript", "react"],
+    "imageAlt": "Retro terminal-style portfolio interface",
+    "imageAltEs": "Interfaz de portfolio con estética de terminal retro",
+    "url": "#inicio"
+  }
+]
